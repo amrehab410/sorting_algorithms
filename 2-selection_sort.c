@@ -16,17 +16,17 @@ void selection_sort(int *array, size_t size)
 
 	for (i = 0; i < size - 1; i++)
 	{
-		min = array[i];
+		index = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[j] < min)
+			if (array[j] < array[index])
 			{
-				min = array[j];
 				index = j;
 			}
 		}
 		if (index != i)
 		{
+			min = array[index];
 			array[index] = array[i];
 			array[i] = min;
 			print_array(array, size);
