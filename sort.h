@@ -27,5 +27,6 @@ void print_list(const listint_t *list);
 void swap_list(listint_t *a, listint_t *b);
 int partition(int *array, int first_ele, int last_ele, size_t size);
 void sorting(int *array, int first, int last, size_t size);
+void shell_sort(int *array, size_t size);
 
 #endif
